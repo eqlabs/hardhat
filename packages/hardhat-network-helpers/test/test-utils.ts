@@ -11,7 +11,7 @@ declare module "mocha" {
 
 export function useEnvironment(
   fixtureProjectName: string,
-  networkName = "hardhat"
+  networkName = "inMemoryNode"
 ) {
   beforeEach("Loading hardhat environment", function () {
     process.chdir(path.join(__dirname, "fixture-projects", fixtureProjectName));
