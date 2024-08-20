@@ -17,9 +17,9 @@ describe("setCode", function () {
   };
 
   it("should allow setting the code of a given address", async function () {
-    await hh.setCode(recipient, "0xa1a2a3");
+    await hh.setCode(recipient, "0xa1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2");
 
-    assert.equal(await getCode(recipient), "0xa1a2a3");
+    assert.equal(await getCode(recipient), "0xa1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2a3a1a2");
   });
 
   describe("accepted parameter types for code", function () {
